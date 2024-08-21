@@ -35,6 +35,10 @@ class Dev(Configuration):
 
     OMDB_KEY = "38160a2d"
 
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+    ADMINS = [("Ben", "ben@example.com")]
+
 
     # Quick-start development settings - unsuitable for production
     # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
